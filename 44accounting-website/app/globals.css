@@ -88,6 +88,19 @@
   --sidebar-accent-foreground: #2E3B7F;
   --sidebar-border: #E5E7EB;
   --sidebar-ring: #2E3B7F;
+
+  --brand-gradient: linear-gradient(to right, #F59E0B, #10B981, #3B82F6);
+}
+
+.text-gradient {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-brand-gradient {
+  background: var(--brand-gradient);
 }
 
 .dark {
