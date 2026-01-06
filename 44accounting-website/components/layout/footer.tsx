@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import { EditModeToggle } from '../ui/edit-mode-toggle';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -55,6 +56,7 @@ export function Footer() {
           <p>{t('rights')}</p>
         </div>
       </div>
+      <EditModeToggle />
     </footer>
   );
 }
