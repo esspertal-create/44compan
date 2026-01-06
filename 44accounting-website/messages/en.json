@@ -32,29 +32,37 @@
     "title": "Our Services",
     "subtitle": "Tailored solutions for your needs",
     "learnMore": "Learn more",
+    "getQuote": "Get a quote",
+    "close": "Close",
     "accounting": {
       "title": "Accounting",
-      "description": "Accounting services for small and medium enterprises, sole traders, freelancers, and international companies"
+      "description": "Accounting services for small and medium enterprises, sole traders, freelancers, and international companies",
+      "fullDescription": "Our accounting service includes complete bookkeeping for entrepreneurs, tradesmen, and non-profit organizations. This includes posting invoices, bank statements, VAT calculation, fixed asset management, and preparation of all necessary statistical and financial reports according to legal regulations."
     },
     "consulting": {
       "title": "Consulting",
-      "description": "We provide support related to your business operations to ensure compliance with legal requirements"
+      "description": "We provide support related to your business operations to ensure compliance with legal requirements",
+      "fullDescription": "Expert consulting is key to the development of any business. We provide tax consulting, tax liability optimization, profitability analysis, and advice on choosing the most favorable business model. We help you make informed decisions that reduce risks and increase profits."
     },
     "formation": {
       "title": "Company Formation",
-      "description": "Guiding the company formation process, consulting, assistance in finding business premises"
+      "description": "Guiding the company formation process, consulting, assistance in finding business premises",
+      "fullDescription": "We help you in every step of starting your own business. Choosing between Ltd, Simple Ltd, or trade, preparing documentation for the notary, opening a bank account, and registration in relevant registries (Tax Administration, Pension and Health Insurance). We save your time and ensure a proper start."
     },
     "reporting": {
       "title": "Reporting",
-      "description": "Data available at any moment of business operations – balance sheet, P&L, customer and supplier balances"
+      "description": "Data available at any moment of business operations – balance sheet, P&L, customer and supplier balances",
+      "fullDescription": "Timely information is the foundation of successful management. We prepare monthly and quarterly business reports, balance sheets, profit and loss statements (P&L), and track customer and supplier balances. Our reports are clear, precise, and tailored to your needs for making strategic decisions."
     },
     "payroll": {
       "title": "Payroll Processing",
-      "description": "Payroll processing, record keeping and regulatory compliance, preparation and implementation of internal policies"
+      "description": "Payroll processing, record keeping and regulatory compliance, preparation and implementation of internal policies",
+      "fullDescription": "Employee administration and payroll processing require precision and monitoring of constant legal changes. We handle employee registration/deregistration, payroll calculation of salaries, allowances, and bonuses, preparation of JOPPD forms, and keeping records of work and vacations. Your employees will be paid accurately and on time."
     },
     "selfEmployed": {
       "title": "Self-Employed",
-      "description": "Accounting and consulting for self-employed professionals, preparation of tax forms, business control"
+      "description": "Accounting and consulting for self-employed professionals, preparation of tax forms, business control",
+      "fullDescription": "We specialize in supporting self-employed professionals (flat-rate tax). We keep the revenue book (KPR), monitor the threshold for entering the VAT system, prepare the annual PO-SD form, and provide continuous advice on contributions and legal limits. We enable you to focus on your work while we take care of the paperwork."
     }
   },
   "about": {
@@ -125,7 +133,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated",
+    "lastUpdated": "Last updated: January 6, 2026",
     "intro": "This Privacy Policy describes how Forty Four Accounting collects, uses, and protects your personal data.",
     "section1Title": "Data Collection",
     "section1Content": "We collect personal data that you voluntarily provide through our contact form or via email.",
@@ -139,5 +147,17 @@
     "accept": "Accept",
     "decline": "Decline",
     "learnMore": "Learn more"
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: January 6, 2026",
+    "section1Title": "1. Acceptance of Terms",
+    "section1Content": "By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement.",
+    "section2Title": "2. Use License",
+    "section2Content": "Permission is granted to temporarily view the materials (information or software) on Forty Four Accounting's website for personal, non-commercial transitory viewing only.",
+    "section3Title": "3. Disclaimer",
+    "section3Content": "The materials on Forty Four Accounting's website are provided on an 'as is' basis. Forty Four Accounting makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties.",
+    "section4Title": "4. Limitations",
+    "section4Content": "In no event shall Forty Four Accounting or its suppliers be liable for any damages arising out of the use or inability to use the materials on this website."
   }
 }

@@ -32,29 +32,37 @@
     "title": "Naše usluge",
     "subtitle": "Prilagođena rješenja za vaše potrebe",
     "learnMore": "Saznaj više",
+    "getQuote": "Zatražite ponudu",
+    "close": "Zatvori",
     "accounting": {
       "title": "Knjigovodstvo",
-      "description": "Knjigovodstvo za male i srednje poduzetnike, obrtnike, samostalne djelatnosti i međunarodne tvrtke"
+      "description": "Knjigovodstvo za male i srednje poduzetnike, obrtnike, samostalne djelatnosti i međunarodne tvrtke",
+      "fullDescription": "Naša usluga knjigovodstva obuhvaća cjelokupno vođenje poslovnih knjiga za poduzetnike, obrtnike i neprofitne organizacije. To uključuje knjiženje URA/IRA, izvode, obračun PDV-a, vođenje osnovnih sredstava te izradu svih potrebnih statističkih i financijskih izvještaja prema zakonskim propisima."
     },
     "consulting": {
       "title": "Savjetovanje",
-      "description": "Pružamo Vam podršku u vezi s poslovanjem kako biste poslovali u skladu sa zakonom"
+      "description": "Pružamo Vam podršku u vezi s poslovanjem kako biste poslovali u skladu sa zakonom",
+      "fullDescription": "Stručno savjetovanje ključno je za razvoj svakog poslovanja. Pružamo porezno savjetovanje, optimizaciju poreznih obveza, analizu profitabilnosti te savjetovanje pri odabiru najpovoljnijeg modela poslovanja. Pomažemo vam u donošenju informiranih odluka koje smanjuju rizike i povećavaju dobit."
     },
     "formation": {
       "title": "Osnivanje tvrtke",
-      "description": "Vođenje procesa osnivanja tvrtke, savjetovanje, asistencija pri pronalasku poslovnog prostora"
+      "description": "Vođenje procesa osnivanja tvrtke, savjetovanje, asistencija pri pronalasku poslovnog prostora",
+      "fullDescription": "Pomažemo vam u svakom koraku pokretanja vlastitog biznisa. Odabir između d.o.o., j.d.o.o. ili obrta, priprema dokumentacije za javnog bilježnika, otvaranje računa u banci i prijava u nadležne registre (Porezna uprava, HZMO, HZZO). Štedimo vaše vrijeme i osiguravamo pravilan početak."
     },
     "reporting": {
       "title": "Izvještavanje",
-      "description": "Podaci dostupni u svakom trenutku poslovanja – bilanca, RDiG, salda kupaca i dobavljača"
+      "description": "Podaci dostupni u svakom trenutku poslovanja – bilanca, RDiG, salda kupaca i dobavljača",
+      "fullDescription": "Pravovremene informacije su temelj uspješnog upravljanja. Izrađujemo mjesečna i kvartalna izvješća o poslovanju, bilance, račune dobiti i gubitka (RDG) te pratimo salda kupaca i dobavljača. Naši izvještaji su jasni, precizni i prilagođeni vašim potrebama za donošenje strateških odluka."
     },
     "payroll": {
       "title": "Obračun plaća",
-      "description": "Obračun plaća, uz vođenje evidencije i praćenje propisa, izradu i implementaciju internih akata"
+      "description": "Obračun plaća, uz vođenje evidencije i praćenje propisa, izradu i implementaciju internih akata",
+      "fullDescription": "Administracija zaposlenika i obračun plaća zahtijevaju preciznost i praćenje stalnih promjena zakona. Obavljamo prijavu i odjavu radnika, obračun plaća, naknada i bonusa, izradu JOPPD obrazaca, te vođenje evidencije rada i godišnjih odmora. Vaši djelatnici bit će plaćeni točno i na vrijeme."
     },
     "selfEmployed": {
       "title": "Paušalci",
-      "description": "Vođenje knjigovodstva i savjetovanje obrtnika paušalaca, priprema PO-SD obrasca, kontrola poslovanja"
+      "description": "Vođenje knjigovodstva i savjetovanje obrtnika paušalaca, priprema PO-SD obrasca, kontrola poslovanja",
+      "fullDescription": "Specijalizirani smo za podršku obrtnicima paušalcima. Vodimo knjigu prometa (KPR), pratimo prag za ulazak u sustav PDV-a, pripremamo godišnji PO-SD obrazac te pružamo kontinuirano savjetovanje o doprinosima i zakonskim limitima. Omogućujemo vam da se fokusirate na svoj rad dok mi brinemo o papirima."
     }
   },
   "about": {
@@ -125,7 +133,7 @@
   },
   "privacy": {
     "title": "Politika privatnosti",
-    "lastUpdated": "Zadnje ažurirano",
+    "lastUpdated": "Zadnje ažurirano: 6. siječnja 2026.",
     "intro": "Ova Politika privatnosti opisuje kako Forty Four Accounting prikuplja, koristi i štiti vaše osobne podatke.",
     "section1Title": "Prikupljanje podataka",
     "section1Content": "Prikupljamo osobne podatke koje nam dobrovoljno dostavljate putem kontakt obrasca ili e-mailom.",
@@ -139,5 +147,17 @@
     "accept": "Prihvaćam",
     "decline": "Odbij",
     "learnMore": "Saznaj više"
+  },
+  "terms": {
+    "title": "Uvjeti korištenja",
+    "lastUpdated": "Zadnje ažurirano: 6. siječnja 2026.",
+    "section1Title": "1. Prihvaćanje uvjeta",
+    "section1Content": "Pristupanjem i korištenjem ove web stranice prihvaćate i slažete se da ćete biti vezani odredbama ovog sporazuma.",
+    "section2Title": "2. Licenca za korištenje",
+    "section2Content": "Dopuštenje je privremeno gledanje materijala (informacija ili softvera) na web stranici Forty Four Accounting samo za osobno, nekomercijalno privremeno gledanje.",
+    "section3Title": "3. Odricanje od odgovornosti",
+    "section3Content": "Materijali na web stranici Forty Four Accounting pružaju se 'kakvi jesu'. Forty Four Accounting ne daje nikakva jamstva, izražena ili implicirana, i ovime se odriče svih ostalih jamstava.",
+    "section4Title": "4. Ograničenja",
+    "section4Content": "Ni u kojem slučaju Forty Four Accounting ili njegovi dobavljači neće biti odgovorni za bilo kakvu štetu nastalu korištenjem ili nemogućnošću korištenja materijala na ovoj web stranici."
   }
 }

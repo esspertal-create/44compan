@@ -18,6 +18,8 @@ export function Header() {
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
+  const isHomePage = pathname === `/${locale}` || pathname === '/';
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -85,22 +87,24 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation - Centered Pill */}
-          <nav className="hidden md:flex items-center gap-1 bg-white/50 backdrop-blur-sm p-1.5 rounded-full border border-white/20 shadow-sm mx-auto absolute left-1/2 -translate-x-1/2">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={cn(
-                  "relative px-5 py-2 text-sm font-medium transition-all duration-300 rounded-full",
-                  activeSection === item.id
-                    ? "text-white bg-[#2E3B7F] shadow-lg shadow-blue-900/10"
-                    : "text-slate-600 hover:text-[#2E3B7F] hover:bg-slate-50/80"
-                )}
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
+          {isHomePage && (
+            <nav className="hidden md:flex items-center gap-1 bg-white/50 backdrop-blur-sm p-1.5 rounded-full border border-white/20 shadow-sm mx-auto absolute left-1/2 -translate-x-1/2">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={cn(
+                    "relative px-5 py-2 text-sm font-medium transition-all duration-300 rounded-full",
+                    activeSection === item.id
+                      ? "text-white bg-[#2E3B7F] shadow-lg shadow-blue-900/10"
+                      : "text-slate-600 hover:text-[#2E3B7F] hover:bg-slate-50/80"
+                  )}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+          )}
 
           {/* Right side: Language & CTA */}
           <div className="flex items-center gap-4 relative z-50">
@@ -114,16 +118,18 @@ export function Header() {
             </button>
 
             {/* Mobile Menu Toggle */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-full hover:bg-slate-100 transition-colors"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6 text-slate-800" />
-              ) : (
-                <Menu className="h-6 w-6 text-slate-800" />
-              )}
-            </button>
+            {isHomePage && (
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 rounded-full hover:bg-slate-100 transition-colors"
+              >
+                {mobileMenuOpen ? (
+                  <X className="h-6 w-6 text-slate-800" />
+                ) : (
+                  <Menu className="h-6 w-6 text-slate-800" />
+                )}
+              </button>
+            )}
           </div>
         </div>
       </header>

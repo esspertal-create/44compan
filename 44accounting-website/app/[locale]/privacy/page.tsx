@@ -9,13 +9,13 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 py-12">
+      <main className="flex-1 py-12 pt-32">
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
               <CardTitle className="text-3xl">{t('title')}</CardTitle>
               <p className="text-muted-foreground">
-                {t('lastUpdated')}: January 6, 2025
+                {t('lastUpdated')}
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
