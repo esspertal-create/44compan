@@ -9,8 +9,14 @@ import { useRouter } from 'next/navigation';
 export function EditModeToggle() {
   const [isEditMode, setIsEditMode] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [isDev, setIsDev] = useState(false);
   const locale = useLocale();
   const router = useRouter();
+
+  // Only show edit mode in development
+  useEffect(() => {
+    setIsDev(process.env.NODE_ENV === 'development' || window.location.hostname === 'localhost');
+  }, []);
 
   const handleElementClick = useCallback((e: MouseEvent) => {
     if (!isEditMode) return;
@@ -118,6 +124,11 @@ export function EditModeToggle() {
       document.body.classList.remove('cursor-text');
     };
   }, [isEditMode, handleElementClick]);
+
+  // Don't render on production
+  if (!isDev) {
+    return null;
+  }
 
   return (
     <div 
