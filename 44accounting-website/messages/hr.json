@@ -10,7 +10,15 @@
     "subtitle": "Pouzdan partner za vaše poslovanje",
     "description": "Pružamo kompletan spektar računovodstvenih usluga za male i srednje poduzetnike, obrtnike i međunarodne tvrtke.",
     "cta": "Kontaktirajte nas",
-    "ctaSecondary": "Naše usluge"
+    "ctaPrimary": "Kontaktirajte nas",
+    "ctaSecondary": "Naše usluge",
+    "badge": "Vaš pouzdan financijski partner",
+    "stats": {
+      "savings": "Godišnja ušteda",
+      "growth": "+25% Rast",
+      "trustedBy": "Vjeruju nam",
+      "clients": "200+ Klijenata"
+    }
   },
   "services": {
     "title": "Naše usluge",
@@ -48,6 +56,20 @@
     "feature1Description": "Tim certificiranih računovođa",
     "feature2Title": "Pouzdanost",
     "feature2Description": "Pravovremena i precizna izvješća",
+    "stats": {
+      "years": "25+ Godina",
+      "experience": "Iskustva",
+      "clientsCount": "200+",
+      "clients": "Sretnih klijenata",
+      "consultationsCount": "2k+",
+      "consultations": "Savjetovanja",
+      "dedicationCount": "100%",
+      "dedication": "Posvećenost"
+    },
+    "quote": {
+      "text": "Uspjeh se gradi na povjerenju i preciznosti.",
+      "label": "Naš moto"
+    },
     "feature3Title": "Podrška",
     "feature3Description": "Dostupni smo kada nam trebate"
   },

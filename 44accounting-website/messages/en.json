@@ -10,7 +10,15 @@
     "subtitle": "Your Trusted Business Partner",
     "description": "We provide a complete range of accounting services for small and medium-sized enterprises, sole traders, and international companies.",
     "cta": "Contact Us",
-    "ctaSecondary": "Our Services"
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Our Services",
+    "badge": "Your Trusted Financial Partner",
+    "stats": {
+      "savings": "Annual Savings",
+      "growth": "+25% Growth",
+      "trustedBy": "Trusted By",
+      "clients": "200+ Clients"
+    }
   },
   "services": {
     "title": "Our Services",
@@ -48,6 +56,20 @@
     "feature1Description": "Team of certified accountants",
     "feature2Title": "Reliability",
     "feature2Description": "Timely and accurate reports",
+    "stats": {
+      "years": "25+ Years",
+      "experience": "Experience",
+      "clientsCount": "200+",
+      "clients": "Happy Clients",
+      "consultationsCount": "2k+",
+      "consultations": "Consultations",
+      "dedicationCount": "100%",
+      "dedication": "Dedication"
+    },
+    "quote": {
+      "text": "Success is built on trust and precision.",
+      "label": "Our Motto"
+    },
     "feature3Title": "Support",
     "feature3Description": "Available when you need us"
   },

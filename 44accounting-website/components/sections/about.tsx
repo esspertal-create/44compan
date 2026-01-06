@@ -25,38 +25,62 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="w-full pt-12 pb-20 md:pt-20 md:pb-24 bg-white relative overflow-hidden">
+    <section id="about" className="w-full pt-16 pb-20 md:pt-24 md:pb-28 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16 space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-500">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2E3B7F]">
-              {t('title')}
-            </h2>
-            <div className="w-16 h-1 bg-[#F59E0B] mx-auto rounded-full" />
-            <p className="text-lg md:text-xl text-slate-600 font-light max-w-2xl mx-auto">
-              {t('subtitle')}
-            </p>
-            <p className="text-base text-slate-500 max-w-3xl mx-auto leading-relaxed pt-2">
-              {t('description')}
-            </p>
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Content Side */}
+          <div className="space-y-8 order-2 lg:order-1 animate-in fade-in slide-in-from-left-10 duration-1000 fill-mode-both">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1e293b] leading-tight">
+                {t('title')}
+              </h2>
+              <div className="w-24 h-1.5 rounded-full bg-gradient-to-r from-[#F59E0B] via-[#10B981] to-[#3B82F6]" />
+              
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light">
+                {t('subtitle')}
+              </p>
+              <p className="text-base text-slate-500 leading-7">
+                {t('description')}
+              </p>
+            </div>
+
+            {/* Features List */}
+            <div className="grid gap-6 py-6">
+              {features.map(({ icon: Icon, title, description }, index) => (
+                <div 
+                  key={index} 
+                  className="flex items-start gap-4"
+                >
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mt-1">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-800 mb-2">{title}</h3>
+                    <p className="text-slate-600 leading-relaxed text-sm">{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            {features.map(({ icon: Icon, title, description }, index) => (
-              <div 
-                key={index} 
-                className="text-center space-y-4 p-8 rounded-2xl bg-slate-50 border border-slate-100/50 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 animate-in fade-in slide-in-from-bottom-8 duration-500"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#E0F2FE] mb-4 text-[#2E3B7F]">
-                  <Icon className="h-8 w-8" />
+          {/* Desktop Image Side */}
+          <div className="relative order-1 lg:order-2 animate-in fade-in slide-in-from-right-10 duration-1000 delay-200 fill-mode-both">
+             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] lg:aspect-auto lg:h-[800px]">
+                <img 
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" 
+                  alt="Our Professoinal Team" 
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Quote Card Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 text-white">
+                  <p className="font-serif text-xl italic mb-4">"{t('quote.text')}"</p>
+                  <p className="text-sm font-bold uppercase tracking-widest text-blue-200">{t('quote.label')}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-[#2E3B7F]">{title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{description}</p>
               </div>
-            ))}
+              
+              {/* Simple decorative square behind */}
+              <div className="absolute -z-10 top-12 -right-12 w-full h-full border-2 border-slate-200 rounded-2xl" />
           </div>
         </div>
       </div>
