@@ -6,7 +6,7 @@ _bmad/
 _bmad-output/
 BMAD-METHOD/
 docs/
-.github/agents/
+.github/
 
 # dependencies
 /node_modules

@@ -40,7 +40,7 @@ export function Hero() {
                   <span className="text-sm font-semibold text-slate-600 tracking-wide">{t('badge') || 'Trusted by 500+ Companies'}</span>
                 </div>
                 
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans font-bold tracking-tight text-[#1e293b] leading-[1.05]">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-sans font-bold tracking-tight text-[#1e293b] leading-[1.1]">
                   <span className="block text-[#2E3B7F]">{t('title').split(' ')[0]}</span>
                   <span className="relative">
                     {t('title').split(' ').slice(1).join(' ')}
