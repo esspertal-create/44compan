@@ -7,7 +7,8 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: 'hr',
-  localePrefix: 'always'
+  localePrefix: 'as-needed',
+  localeDetection: false // Disable browser language detection - always use Croatian
 });
 
 export const config = {
