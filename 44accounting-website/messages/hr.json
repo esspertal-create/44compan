@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Profesionalne računovodstvene usluge",
+    "subtitle": "Pouzdan partner za vaše poslovanje",
+    "description": "Pružamo kompletan spektar računovodstvenih usluga za male i srednje poduzetnike, obrtnike i međunarodne tvrtke.",
+    "cta": "Kontaktirajte nas",
+    "ctaSecondary": "Naše usluge"
+  },
+  "services": {
+    "title": "Naše usluge",
+    "subtitle": "Prilagođena rješenja za vaše potrebe",
+    "accounting": {
+      "title": "Knjigovodstvo",
+      "description": "Knjigovodstvo za male i srednje poduzetnike, obrtnike, samostalne djelatnosti i međunarodne tvrtke"
+    },
+    "consulting": {
+      "title": "Savjetovanje",
+      "description": "Pružamo Vam podršku u vezi s poslovanjem kako biste poslovali u skladu sa zakonom"
+    },
+    "formation": {
+      "title": "Osnivanje tvrtke",
+      "description": "Vođenje procesa osnivanja tvrtke, savjetovanje, asistencija pri pronalasku poslovnog prostora"
+    },
+    "reporting": {
+      "title": "Izvještavanje",
+      "description": "Podaci dostupni u svakom trenutku poslovanja – bilanca, RDiG, salda kupaca i dobavljača"
+    },
+    "payroll": {
+      "title": "Obračun plaća",
+      "description": "Obračun plaća, uz vođenje evidencije i praćenje propisa, izradu i implementaciju internih akata"
+    },
+    "selfEmployed": {
+      "title": "Paušalci",
+      "description": "Vođenje knjigovodstva i savjetovanje obrtnika paušalaca, priprema PO-SD obrasca, kontrola poslovanja"
+    }
+  },
+  "about": {
+    "title": "O nama",
+    "subtitle": "Vaš pouzdani partner u poslovanju",
+    "description": "Forty Four Accounting je vodeća računovodstvena tvrtka s dugogodišnjim iskustvom u pružanju profesionalnih usluga. Naš tim stručnjaka posvećen je pružanju vrhunske podrške i savjetovanja kako bi vaše poslovanje bilo u skladu sa svim zakonskim propisima.",
+    "feature1Title": "Stručnost",
+    "feature1Description": "Tim certificiranih računovođa",
+    "feature2Title": "Pouzdanost",
+    "feature2Description": "Pravovremena i precizna izvješća",
+    "feature3Title": "Podrška",
+    "feature3Description": "Dostupni smo kada nam trebate"
+  },
+  "contact": {
+    "title": "Kontaktirajte nas",
+    "subtitle": "Rado ćemo odgovoriti na sva vaša pitanja",
+    "name": "Ime i prezime",
+    "email": "Email adresa",
+    "phone": "Telefon",
+    "message": "Poruka",
+    "send": "Pošalji poruku",
+    "consent": "Slažem se s obradom osobnih podataka u svrhu odgovora na upit",
+    "address": "Adresa",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "companyName": "Forty Four Accounting d.o.o.",
+    "address": "Ulica Exemple 44, 10000 Zagreb, Hrvatska",
+    "oib": "OIB: 12345678901",
+    "registrationNumber": "Matični broj: 123456789",
+    "shareCapital": "Temeljni kapital: 20.000,00 HRK uplaćen u cijelosti",
+    "court": "Trgovački sud u Zagrebu",
+    "legalInfo": "Pravne informacije",
+    "quickLinks": "Brze poveznice",
+    "privacy": "Politika privatnosti",
+    "terms": "Uvjeti korištenja",
+    "rights": "© 2025 Forty Four Accounting. Sva prava pridržana."
+  },
+  "privacy": {
+    "title": "Politika privatnosti",
+    "lastUpdated": "Zadnje ažurirano",
+    "intro": "Ova Politika privatnosti opisuje kako Forty Four Accounting prikuplja, koristi i štiti vaše osobne podatke.",
+    "section1Title": "Prikupljanje podataka",
+    "section1Content": "Prikupljamo osobne podatke koje nam dobrovoljno dostavljate putem kontakt obrasca ili e-mailom.",
+    "section2Title": "Korištenje podataka",
+    "section2Content": "Vaši podaci se koriste isključivo u svrhu odgovora na vaše upite i pružanja usluga.",
+    "section3Title": "Zaštita podataka",
+    "section3Content": "Primjenjujemo odgovarajuće sigurnosne mjere za zaštitu vaših osobnih podataka."
+  },
+  "cookie": {
+    "message": "Ova web stranica koristi kolačiće kako bi poboljšala vaše korisničko iskustvo.",
+    "accept": "Prihvaćam",
+    "decline": "Odbij",
+    "learnMore": "Saznaj više"
+  }
+}

@@ -1,0 +1,46 @@
+# BMAD Framework
+.claude/
+_bmad/
+_bmad-output/
+BMAD-METHOD/
+.github/
+docs/
+
+# Node modules
+node_modules/
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.vercel

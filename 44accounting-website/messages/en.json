@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professional Accounting Services",
+    "subtitle": "Your Trusted Business Partner",
+    "description": "We provide a complete range of accounting services for small and medium-sized enterprises, sole traders, and international companies.",
+    "cta": "Contact Us",
+    "ctaSecondary": "Our Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailored solutions for your needs",
+    "accounting": {
+      "title": "Accounting",
+      "description": "Accounting services for small and medium enterprises, sole traders, freelancers, and international companies"
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "We provide support related to your business operations to ensure compliance with legal requirements"
+    },
+    "formation": {
+      "title": "Company Formation",
+      "description": "Guiding the company formation process, consulting, assistance in finding business premises"
+    },
+    "reporting": {
+      "title": "Reporting",
+      "description": "Data available at any moment of business operations – balance sheet, P&L, customer and supplier balances"
+    },
+    "payroll": {
+      "title": "Payroll Processing",
+      "description": "Payroll processing, record keeping and regulatory compliance, preparation and implementation of internal policies"
+    },
+    "selfEmployed": {
+      "title": "Self-Employed",
+      "description": "Accounting and consulting for self-employed professionals, preparation of tax forms, business control"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your trusted business partner",
+    "description": "Forty Four Accounting is a leading accounting firm with years of experience in providing professional services. Our team of experts is dedicated to providing top-notch support and consulting to ensure your business complies with all legal regulations.",
+    "feature1Title": "Expertise",
+    "feature1Description": "Team of certified accountants",
+    "feature2Title": "Reliability",
+    "feature2Description": "Timely and accurate reports",
+    "feature3Title": "Support",
+    "feature3Description": "Available when you need us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'll be happy to answer all your questions",
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send message",
+    "consent": "I agree to the processing of personal data for the purpose of responding to this inquiry",
+    "address": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "companyName": "Forty Four Accounting Ltd.",
+    "address": "Exemple Street 44, 10000 Zagreb, Croatia",
+    "oib": "Tax ID: 12345678901",
+    "registrationNumber": "Registration No: 123456789",
+    "shareCapital": "Share Capital: 20,000.00 HRK fully paid",
+    "court": "Commercial Court in Zagreb",
+    "legalInfo": "Legal Information",
+    "quickLinks": "Quick Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "© 2025 Forty Four Accounting. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "intro": "This Privacy Policy describes how Forty Four Accounting collects, uses, and protects your personal data.",
+    "section1Title": "Data Collection",
+    "section1Content": "We collect personal data that you voluntarily provide through our contact form or via email.",
+    "section2Title": "Data Usage",
+    "section2Content": "Your data is used exclusively for the purpose of responding to your inquiries and providing services.",
+    "section3Title": "Data Protection",
+    "section3Content": "We implement appropriate security measures to protect your personal data."
+  },
+  "cookie": {
+    "message": "This website uses cookies to improve your user experience.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learnMore": "Learn more"
+  }
+}
