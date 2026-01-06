@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, Star } from 'lucide-react';
+import { ChevronRight, Star } from 'lucide-react';
 
 export function Hero() {
   const t = useTranslations('hero');
@@ -59,24 +59,20 @@ export function Hero() {
                 <Button 
                   size="lg" 
                   onClick={() => scrollToSection('contact')}
-                  className="bg-[#2E3B7F] hover:bg-[#1e295f] text-white px-8 h-16 text-lg rounded-2xl shadow-xl shadow-blue-900/20 transition-all hover:-translate-y-1 hover:shadow-blue-900/30 flex items-center gap-3 group"
+                  className="bg-[#2E3B7F] hover:bg-[#1e295f] text-white px-8 h-14 text-base rounded-full shadow-lg shadow-blue-900/20 transition-all hover:-translate-y-0.5 hover:shadow-blue-900/30 flex items-center gap-2 group"
                 >
                   {t('ctaPrimary')}
-                  <span className="bg-white/10 p-1.5 rounded-lg group-hover:bg-white/20 transition-colors">
-                     <ArrowRight className="h-5 w-5" />
-                  </span>
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
                 
                 <Button 
                   variant="ghost" 
                   size="lg" 
                   onClick={() => scrollToSection('services')}
-                  className="h-16 px-8 text-lg font-medium text-slate-600 hover:text-[#2E3B7F] hover:bg-white hover:shadow-lg hover:shadow-slate-200/50 rounded-2xl border border-transparent hover:border-slate-100 transition-all group"
+                  className="h-14 px-8 text-base font-medium text-slate-600 hover:text-[#2E3B7F] hover:bg-slate-50 rounded-full transition-all group gap-2"
                 >
-                  <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center mr-3 group-hover:bg-[#2E3B7F]/10 group-hover:text-[#2E3B7F] transition-colors">
-                     <Play className="h-4 w-4 fill-current ml-0.5" />
-                  </div>
                   {t('ctaSecondary')}
+                  <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-[#2E3B7F] transition-colors" />
                 </Button>
               </div>
 
@@ -105,8 +101,8 @@ export function Hero() {
                            </div>
                         </div>
                         <div>
-                          <p className="font-serif text-4xl font-bold tracking-tight">Forty Four.</p>
-                          <p className="text-white/80 font-light text-lg mt-1">Excellence is our standard.</p>
+                          <p className="font-serif text-4xl font-bold tracking-tight">{t('brandNameShort')}</p>
+                          <p className="text-white/80 font-light text-lg mt-1">{t('brandMotto')}</p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +114,7 @@ export function Hero() {
                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
-                            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">Revenue Growth</p>
+                            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">{t('stats.revenueGrowth')}</p>
                             <p className="text-xl font-bold text-slate-800">+127%</p>
                         </div>
                     </div>
@@ -131,8 +127,8 @@ export function Hero() {
                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </div>
                         <div>
-                            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">Tax Savings</p>
-                            <p className="text-xl font-bold text-slate-800">Optimized</p>
+                            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">{t('stats.taxSavings')}</p>
+                            <p className="text-xl font-bold text-slate-800">{t('stats.optimized')}</p>
                         </div>
                     </div>
                 </div>

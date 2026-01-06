@@ -96,7 +96,7 @@ export function About() {
                          Accounting
                      </span>
                      <p className="text-slate-600 max-w-xs ml-auto pr-4 pt-4 border-t border-[#2E3B7F]/20">
-                         Defining professional excellence in financial services since 2024.
+                         {t('brandDescription')}
                      </p>
                  </div>
             </div>

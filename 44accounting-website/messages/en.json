@@ -13,16 +13,23 @@
     "ctaPrimary": "Contact Us",
     "ctaSecondary": "Our Services",
     "badge": "Your Trusted Financial Partner",
+    "brandNameShort": "Forty Four.",
+    "brandMotto": "Excellence is our standard.",
     "stats": {
       "savings": "Annual Savings",
       "growth": "+25% Growth",
+      "revenueGrowth": "Revenue Growth",
+      "taxSavings": "Tax Savings",
+      "optimized": "Optimized",
       "trustedBy": "Trusted By",
       "clients": "200+ Clients"
     }
   },
   "services": {
+    "badge": "Excellence in Finance",
     "title": "Our Services",
     "subtitle": "Tailored solutions for your needs",
+    "learnMore": "Learn more",
     "accounting": {
       "title": "Accounting",
       "description": "Accounting services for small and medium enterprises, sole traders, freelancers, and international companies"
@@ -49,6 +56,7 @@
     }
   },
   "about": {
+    "badge": "About Forty Four",
     "title": "About Us",
     "subtitle": "Your trusted business partner",
     "description": "Forty Four Accounting is a leading accounting firm with years of experience in providing professional services. Our team of experts is dedicated to providing top-notch support and consulting to ensure your business complies with all legal regulations.",
@@ -71,11 +79,16 @@
       "label": "Our Motto"
     },
     "feature3Title": "Support",
-    "feature3Description": "Available when you need us"
+    "feature3Description": "Available when you need us",
+    "brandDescription": "Defining professional excellence in financial services since 2024."
   },
   "contact": {
     "title": "Contact Us",
     "subtitle": "We'll be happy to answer all your questions",
+    "transformFuture": "Ready to transform your financial future? Let's start a conversation about you.",
+    "formTitle": "Send us a message",
+    "personalDetails": "Personal Details",
+    "inquirySection": "Inquiry",
     "name": "Full name",
     "email": "Email address",
     "phone": "Phone",
@@ -84,7 +97,9 @@
     "consent": "I agree to the processing of personal data for the purpose of responding to this inquiry",
     "address": "Address",
     "phoneLabel": "Phone",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "successTitle": "Message Sent!",
+    "successMessage": "We will get back to you as soon as possible."
   },
   "footer": {
     "companyName": "Forty Four Accounting Ltd.",

@@ -76,7 +76,7 @@ export function Services() {
                 {/* Footer: Learn More Button */}
                 <div className="pt-2">
                     <button className="flex items-center gap-2 text-sm font-semibold text-slate-400 group-hover:text-[#2E3B7F] transition-colors duration-300 group/btn">
-                        <span className="uppercase tracking-wide text-xs">Learn more</span>
+                        <span className="uppercase tracking-wide text-xs">{t('learnMore')}</span>
                         <div className="h-px w-8 bg-slate-200 group-hover:w-12 group-hover:bg-[#2E3B7F] transition-all duration-300" />
                     </button>
                 </div>

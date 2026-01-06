@@ -13,16 +13,23 @@
     "ctaPrimary": "Kontaktirajte nas",
     "ctaSecondary": "Naše usluge",
     "badge": "Vaš pouzdan financijski partner",
+    "brandNameShort": "Forty Four.",
+    "brandMotto": "Izvrsnost je naš standard.",
     "stats": {
       "savings": "Godišnja ušteda",
       "growth": "+25% Rast",
+      "revenueGrowth": "Rast prihoda",
+      "taxSavings": "Porezne uštede",
+      "optimized": "Optimizirano",
       "trustedBy": "Vjeruju nam",
       "clients": "200+ Klijenata"
     }
   },
   "services": {
+    "badge": "Izvrsnost u financijama",
     "title": "Naše usluge",
     "subtitle": "Prilagođena rješenja za vaše potrebe",
+    "learnMore": "Saznaj više",
     "accounting": {
       "title": "Knjigovodstvo",
       "description": "Knjigovodstvo za male i srednje poduzetnike, obrtnike, samostalne djelatnosti i međunarodne tvrtke"
@@ -49,6 +56,7 @@
     }
   },
   "about": {
+    "badge": "O Forty Four Accounting",
     "title": "O nama",
     "subtitle": "Vaš pouzdani partner u poslovanju",
     "description": "Forty Four Accounting je vodeća računovodstvena tvrtka s dugogodišnjim iskustvom u pružanju profesionalnih usluga. Naš tim stručnjaka posvećen je pružanju vrhunske podrške i savjetovanja kako bi vaše poslovanje bilo u skladu sa svim zakonskim propisima.",
@@ -71,11 +79,16 @@
       "label": "Naš moto"
     },
     "feature3Title": "Podrška",
-    "feature3Description": "Dostupni smo kada nam trebate"
+    "feature3Description": "Dostupni smo kada nam trebate",
+    "brandDescription": "Definiramo profesionalnu izvrsnost u financijskim uslugama od 2024."
   },
   "contact": {
     "title": "Kontaktirajte nas",
     "subtitle": "Rado ćemo odgovoriti na sva vaša pitanja",
+    "transformFuture": "Spremni za transformaciju vaše financijske budućnosti? Započnimo razgovor.",
+    "formTitle": "Pošaljite nam poruku",
+    "personalDetails": "Osobni podaci",
+    "inquirySection": "Upit",
     "name": "Ime i prezime",
     "email": "Email adresa",
     "phone": "Telefon",
@@ -84,7 +97,9 @@
     "consent": "Slažem se s obradom osobnih podataka u svrhu odgovora na upit",
     "address": "Adresa",
     "phoneLabel": "Telefon",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "successTitle": "Poruka poslana!",
+    "successMessage": "Odgovorit ćemo vam u najkraćem mogućem roku."
   },
   "footer": {
     "companyName": "Forty Four Accounting d.o.o.",

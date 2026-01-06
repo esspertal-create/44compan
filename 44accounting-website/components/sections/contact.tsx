@@ -5,11 +5,13 @@ import { Button } from '@/components/ui/button';
 import { CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone, Loader2, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 
 export function Contact() {
   const t = useTranslations('contact');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,11 +20,27 @@ export function Contact() {
     consent: false,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement form submission
-    console.log('Form submitted:', formData);
-    alert('Form submitted! (This is a demo)');
+    setIsSubmitting(true);
+
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
+    setIsSubmitting(false);
+    setIsSuccess(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+      consent: false,
+    });
+
+    // Hide success message after 3 seconds
+    setTimeout(() => {
+      setIsSuccess(false);
+    }, 3000);
   };
 
   return (
@@ -44,7 +62,7 @@ export function Contact() {
                 </h2>
                 <div className="w-24 h-1.5 rounded-full bg-gradient-to-r from-amber-400 to-orange-500" />
                 <p className="text-xl text-blue-200/80 font-light max-w-lg leading-relaxed pt-4">
-                   Ready to transform your financial future? Let's start a conversation about you.
+                   {t('transformFuture')}
                 </p>
              </div>
 
@@ -89,12 +107,30 @@ export function Contact() {
              {/* Decorative Ring behind form */}
              <div className="absolute inset-0 bg-gradient-to-tr from-amber-500 to-blue-600 rounded-[2rem] blur-2xl opacity-20 -z-10 transform rotate-3 scale-105" />
 
-             <div className="bg-white/95 backdrop-blur-xl p-8 md:p-10 rounded-[2rem] shadow-2xl border border-white/20">
+             <div className="bg-white/95 backdrop-blur-xl p-8 md:p-10 rounded-[2rem] shadow-2xl border border-white/20 relative overflow-hidden">
+                
+                {/* Success Overlay - Smooth Animation */}
+                {isSuccess && (
+                  <div className="absolute inset-0 z-50 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center p-8 animate-in fade-in duration-500 fill-mode-forwards">
+                     <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-in zoom-in-50 duration-500 delay-150">
+                        <CheckCircle2 className="w-12 h-12 text-green-600 animate-in slide-in-from-bottom-2 duration-700" />
+                     </div>
+                     <h3 className="text-3xl font-bold text-[#2E3B7F] mb-3 animate-in slide-in-from-bottom-4 duration-700 delay-300">
+                        {t('successTitle') || 'Message Sent!'}
+                     </h3>
+                     <p className="text-slate-500 text-center max-w-xs animate-in slide-in-from-bottom-4 duration-700 delay-500">
+                        {t('successMessage') || 'We will get back to you as soon as possible.'}
+                     </p>
+                  </div>
+                )}
+
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold text-[#2E3B7F] mb-6">Send us a message</h3>
+                  <h3 className="text-2xl font-bold text-[#2E3B7F] mb-6 transition-opacity duration-300">
+                    {t('formTitle')}
+                  </h3>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
-                        <label className="text-sm font-semibold text-slate-700 uppercase tracking-wider text-[11px]">Personal Details</label>
+                        <label className="text-sm font-semibold text-slate-700 uppercase tracking-wider text-[11px]">{t('personalDetails')}</label>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Input
                                 id="name"
@@ -117,8 +153,7 @@ export function Contact() {
                     </div>
 
                     <div className="space-y-2">
-                        <label className="text-sm font-semibold text-slate-700 uppercase tracking-wider text-[11px]">Inquiry</label>
-                        <Input
+                         <Input
                             id="phone"
                             type="tel"
                             placeholder={t('phone')}
@@ -151,8 +186,19 @@ export function Contact() {
                       </label>
                     </div>
 
-                    <Button type="submit" className="w-full h-14 text-lg bg-[#2E3B7F] hover:bg-[#1e295f] text-white rounded-xl shadow-lg shadow-blue-900/20 active:scale-95 transition-all">
-                      {t('send')}
+                    <Button 
+                      type="submit" 
+                      disabled={isSubmitting}
+                      className="w-full h-14 text-lg bg-[#2E3B7F] hover:bg-[#1e295f] text-white rounded-xl shadow-lg shadow-blue-900/20 active:scale-95 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? (
+                        <div className="flex items-center gap-2">
+                          <Loader2 className="h-5 w-5 animate-spin" />
+                          <span>Sending...</span>
+                        </div>
+                      ) : (
+                        t('send')
+                      )}
                     </Button>
                   </form>
                 </CardContent>
