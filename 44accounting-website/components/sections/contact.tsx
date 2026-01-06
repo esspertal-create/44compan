@@ -74,7 +74,7 @@ export function Contact() {
                     <div>
                         <h3 className="font-bold text-lg mb-1">{t('address')}</h3>
                         <p className="text-blue-200 text-sm leading-relaxed opacity-80">
-                            Ulica Exemple 44, 10000 Zagreb<br />Croatia
+                            {t('addressValue')}<br />{t('addressCountry')}
                         </p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ export function Contact() {
                     </div>
                     <div>
                         <h3 className="font-bold text-lg mb-1">{t('phoneLabel')}</h3>
-                        <p className="text-blue-200 text-sm leading-relaxed opacity-80">+385 1 234 5678</p>
+                        <p className="text-blue-200 text-sm leading-relaxed opacity-80">{t('phoneValue')}</p>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ export function Contact() {
                     </div>
                     <div>
                         <h3 className="font-bold text-lg mb-1">{t('emailLabel')}</h3>
-                        <p className="text-blue-200 text-sm leading-relaxed opacity-80">info@fortyfouraccounting.hr</p>
+                        <p className="text-blue-200 text-sm leading-relaxed opacity-80">{t('emailValue')}</p>
                     </div>
                 </div>
              </div>
@@ -194,7 +194,7 @@ export function Contact() {
                       {isSubmitting ? (
                         <div className="flex items-center gap-2">
                           <Loader2 className="h-5 w-5 animate-spin" />
-                          <span>Sending...</span>
+                          <span>{t('sending')}</span>
                         </div>
                       ) : (
                         t('send')

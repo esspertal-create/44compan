@@ -15,10 +15,12 @@
     "badge": "Your Trusted Financial Partner",
     "brandNameShort": "Forty Four.",
     "brandMotto": "Excellence is our standard.",
+    "imageAlt": "Strategic Finance Team",
     "stats": {
       "savings": "Annual Savings",
       "growth": "+25% Growth",
       "revenueGrowth": "Revenue Growth",
+      "revenueGrowthValue": "+127%",
       "taxSavings": "Tax Savings",
       "optimized": "Optimized",
       "trustedBy": "Trusted By",
@@ -64,6 +66,8 @@
     "feature1Description": "Team of certified accountants",
     "feature2Title": "Reliability",
     "feature2Description": "Timely and accurate reports",
+    "brandNumber": "44",
+    "brandName": "Accounting",
     "stats": {
       "years": "25+ Years",
       "experience": "Experience",
@@ -96,10 +100,15 @@
     "send": "Send message",
     "consent": "I agree to the processing of personal data for the purpose of responding to this inquiry",
     "address": "Address",
+    "addressValue": "Exemple Street 44, 10000 Zagreb",
+    "addressCountry": "Croatia",
     "phoneLabel": "Phone",
+    "phoneValue": "+385 1 234 5678",
     "emailLabel": "Email",
+    "emailValue": "info@fortyfouraccounting.hr",
     "successTitle": "Message Sent!",
-    "successMessage": "We will get back to you as soon as possible."
+    "successMessage": "We will get back to you as soon as possible.",
+    "sending": "Sending..."
   },
   "footer": {
     "companyName": "Forty Four Accounting Ltd.",

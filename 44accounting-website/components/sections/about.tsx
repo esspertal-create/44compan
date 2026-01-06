@@ -90,10 +90,10 @@ export function About() {
                  {/* Large typography stat */}
                  <div className="text-right space-y-2">
                      <span className="text-[12rem] leading-none font-bold text-[#2E3B7F] opacity-90 block tracking-tighter">
-                         44
+                         {t('brandNumber')}
                      </span>
                      <span className="text-2xl font-medium text-[#2E3B7F] uppercase tracking-widest block pr-4">
-                         Accounting
+                         {t('brandName')}
                      </span>
                      <p className="text-slate-600 max-w-xs ml-auto pr-4 pt-4 border-t border-[#2E3B7F]/20">
                          {t('brandDescription')}

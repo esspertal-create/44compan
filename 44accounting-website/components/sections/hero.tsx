@@ -88,7 +88,7 @@ export function Hero() {
                 <div className="absolute inset-x-8 top-12 bottom-12 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700 bg-white group">
                     <img 
                       src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop" 
-                      alt="Strategic Finance Team" 
+                      alt={t('imageAlt')} 
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#2E3B7F]/90 via-[#2E3B7F]/20 to-transparent opacity-90" />
@@ -115,7 +115,7 @@ export function Hero() {
                         </div>
                         <div>
                             <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">{t('stats.revenueGrowth')}</p>
-                            <p className="text-xl font-bold text-slate-800">+127%</p>
+                            <p className="text-xl font-bold text-slate-800">{t('stats.revenueGrowthValue')}</p>
                         </div>
                     </div>
                 </div>

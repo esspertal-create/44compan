@@ -20,13 +20,28 @@ export function EditModeToggle() {
 
     const target = e.target as HTMLElement;
     
-    // Check if element has text content or is a likely text container
-    // This is a heuristic. 
-    if (target.children.length === 0 && target.innerText.trim().length > 0) {
+    // Only allow editing on elements that contain direct text, not nested elements with their own text
+    // This prevents grabbing concatenated text from parent containers
+    const hasDirectTextOnly = (el: HTMLElement): boolean => {
+      // Check if element has only text nodes as children (no nested elements with text)
+      for (const child of Array.from(el.childNodes)) {
+        if (child.nodeType === Node.ELEMENT_NODE) {
+          const childEl = child as HTMLElement;
+          // If child element has text content, this parent should not be editable
+          if (childEl.textContent && childEl.textContent.trim().length > 0) {
+            return false;
+          }
+        }
+      }
+      return true;
+    };
+
+    // Check if element has text content and is a leaf text node
+    if (target.textContent && target.textContent.trim().length > 0 && hasDirectTextOnly(target)) {
       e.preventDefault();
       e.stopPropagation();
 
-      const originalText = target.innerText;
+      const originalText = target.textContent; // Use textContent for raw text
       target.contentEditable = 'true';
       target.style.outline = '2px solid #2563eb'; // blue-600 outline
       target.focus();
@@ -35,11 +50,12 @@ export function EditModeToggle() {
         target.contentEditable = 'false';
         target.style.outline = '';
         
-        const newText = target.innerText;
+        const newText = target.textContent || ""; // Use textContent
 
         if (originalText !== newText) {
           setIsSaving(true);
           try {
+            console.log('Sending update:', { locale, originalText, newText });
             const response = await fetch('/api/update-content', {
               method: 'POST',
               headers: {
@@ -61,12 +77,12 @@ export function EditModeToggle() {
             } else {
               console.error('Failed to save:', data.message);
               // Revert on failure? Or just alert.
-              alert('Failed to save changes. The text might not match a translation key.');
-              target.innerText = originalText;
+              alert(`Failed to save changes: ${data.message}`);
+              target.textContent = originalText;
             }
           } catch (err) {
             console.error(err);
-            target.innerText = originalText;
+            target.textContent = originalText;
           } finally {
             setIsSaving(false);
           }

@@ -15,12 +15,14 @@
     "badge": "Vaš pouzdan financijski partner",
     "brandNameShort": "Forty Four.",
     "brandMotto": "Izvrsnost je naš standard.",
+    "imageAlt": "Strateški financijski tim",
     "stats": {
       "savings": "Godišnja ušteda",
       "growth": "+25% Rast",
       "revenueGrowth": "Rast prihoda",
+      "revenueGrowthValue": "+127%",
       "taxSavings": "Porezne uštede",
-      "optimized": "Optimizirano",
+      "optimized": "Optimizacija",
       "trustedBy": "Vjeruju nam",
       "clients": "200+ Klijenata"
     }
@@ -64,6 +66,8 @@
     "feature1Description": "Tim certificiranih računovođa",
     "feature2Title": "Pouzdanost",
     "feature2Description": "Pravovremena i precizna izvješća",
+    "brandNumber": "44",
+    "brandName": "Accounting",
     "stats": {
       "years": "25+ Godina",
       "experience": "Iskustva",
@@ -96,16 +100,21 @@
     "send": "Pošalji poruku",
     "consent": "Slažem se s obradom osobnih podataka u svrhu odgovora na upit",
     "address": "Adresa",
+    "addressValue": "Ulica Exemple 44, 10000 Zagreb",
+    "addressCountry": "Hrvatska",
     "phoneLabel": "Telefon",
+    "phoneValue": "+385 1 234 5678",
     "emailLabel": "Email",
+    "emailValue": "info@fortyfouraccounting.hr",
     "successTitle": "Poruka poslana!",
-    "successMessage": "Odgovorit ćemo vam u najkraćem mogućem roku."
+    "successMessage": "Odgovorit ćemo vam u najkraćem mogućem roku.",
+    "sending": "Šaljem..."
   },
   "footer": {
     "companyName": "Forty Four Accounting d.o.o.",
-    "address": "Ulica Exemple 44, 10000 Zagreb, Hrvatska",
+    "address": "Ulica Example 44, 10000 Zagreb, Hrvatska",
     "oib": "OIB: 12345678901",
-    "registrationNumber": "Matični broj: 123456789",
+    "registrationNumber": "Matični broj: 1234567898",
     "shareCapital": "Temeljni kapital: 20.000,00 HRK uplaćen u cijelosti",
     "court": "Trgovački sud u Zagrebu",
     "legalInfo": "Pravne informacije",
