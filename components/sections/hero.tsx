@@ -15,13 +15,13 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative w-full min-h-[95vh] flex items-center bg-[#F8FAFC] overflow-hidden px-4 md:px-0">
+    <section id="home" className="relative w-full min-h-[95vh] flex items-center bg-[#F8FAFC] overflow-hidden">
       
       {/* 1. Dynamic Background Elements */}
       <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-gradient-to-br from-blue-100/40 to-amber-100/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-gradient-to-tr from-[#2E3B7F]/5 to-transparent rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
-      <div className="container mx-auto px-4 relative z-10 pt-20 pb-12">
+      <div className="container mx-auto px-6 sm:px-8 md:px-4 relative z-10 pt-20 pb-12">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
             
             {/* 2. Left Content - High Impact typography with refined spacing */}
