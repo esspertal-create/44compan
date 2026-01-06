@@ -89,21 +89,25 @@ export function Hero() {
                 <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
                 
                 {/* Main Card */}
-                <div className="absolute inset-x-8 top-12 bottom-12 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700 bg-white">
+                <div className="absolute inset-x-8 top-12 bottom-12 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700 bg-white group">
                     <img 
-                      src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop" 
-                      alt="Strategic Finance" 
-                      className="w-full h-full object-cover"
+                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop" 
+                      alt="Strategic Finance Team" 
+                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#2E3B7F]/80 via-transparent to-transparent opacity-80" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2E3B7F]/90 via-[#2E3B7F]/20 to-transparent opacity-90" />
                     
                     {/* Floating Info inside Image */}
-                    <div className="absolute bottom-10 left-10 text-white space-y-2">
-                        <div className="flex items-center gap-1 text-amber-400">
-                             {[1,2,3,4,5].map(i => <Star key={i} className="h-5 w-5 fill-current" />)}
+                    <div className="absolute bottom-10 left-10 text-white space-y-4">
+                        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl inline-block mb-2">
+                           <div className="flex items-center gap-1 text-amber-400">
+                                {[1,2,3,4,5].map(i => <Star key={i} className="h-5 w-5 fill-current" />)}
+                           </div>
                         </div>
-                        <p className="font-serif text-3xl font-bold">Premium Service.</p>
-                        <p className="text-white/80 font-light">Accounting redefined for the modern age.</p>
+                        <div>
+                          <p className="font-serif text-4xl font-bold tracking-tight">Forty Four.</p>
+                          <p className="text-white/80 font-light text-lg mt-1">Excellence is our standard.</p>
+                        </div>
                     </div>
                 </div>
 

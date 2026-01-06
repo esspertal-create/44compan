@@ -72,7 +72,7 @@ export function Header() {
           >
             <div className={cn(
                "relative transition-all duration-500",
-               scrolled ? "h-8 w-32" : "h-10 w-40"
+               scrolled ? "h-10 w-40" : "h-14 w-56"
             )}>
               <Image
                 src="/logo.svg"
